@@ -132,7 +132,7 @@ table {
   border-spacing: 0;
 }
 html body {
-  background-image: linear-gradient(to top, #F9F9F9, #313715);
+  background-image: linear-gradient(to top, #BBCE8A, #F9F9F9);
 }
 html body .container {
   width: 90%;
@@ -154,6 +154,7 @@ nav .links {
 }
 nav .links a {
   text-decoration: none;
+  font-weight: 900;
   color: #D16014;
   font-family: 'Montserrat', sans-serif;
 }
@@ -166,32 +167,56 @@ nav img {
   height: 400px;
   padding-top: 50px;
 }
-.main .content {
+.main .login {
   color: #F9F9F9;
-  width: 40%;
+  width: 46%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0px 20px;
-  background-color: #313715;
+  background-color: #939F5C;
   border-radius: 15px;
 }
-.main .content h2 {
+.main .login h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
+  color: #D16014;
   padding-top: 20px;
 }
-.main .content p {
+.main .login p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
 }
-.main .login {
+.main .content {
   color: #F9F9F9;
-  width: 40%;
+  width: 46%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0px 20px;
-  background-color: #939F5C;
+  background-color: #313715;
   border-radius: 15px;
+}
+.main .content .stats {
+  display: flex;
+  justify-content: space-around;
+}
+.main .content .stats .stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .content .stats .stat .mainStat {
+  font-size: 2.4rem;
+}
+.images {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.images img {
+  height: 300px;
+  width: 33%;
+  object-fit: contain;
+  border-radius: 10px;
 }
