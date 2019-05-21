@@ -138,21 +138,52 @@ html body .container {
   width: 90%;
   margin: auto;
 }
+.hidden {
+  display: none;
+}
 nav {
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
   font-size: 1.3rem;
 }
-nav .links {
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 500px) {
+  nav {
+    flex-direction: row-reverse;
+  }
+}
+nav .navFunctional {
   width: 50%;
 }
-nav .links a {
+nav .navFunctional .dropDownButton {
+  display: none;
+}
+nav .navFunctional .dropDownButton .hamburgerLine {
+  width: 36px;
+  height: 6px;
+  background-color: black;
+  margin: 6px 0;
+}
+@media (max-width: 500px) {
+  nav .navFunctional .dropDownButton {
+    display: initial;
+  }
+}
+nav .navFunctional .links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  nav .navFunctional .links {
+    flex-direction: column;
+    width: initial;
+    display: none;
+  }
+}
+nav .navFunctional .links a {
   text-decoration: none;
   font-weight: 900;
   color: #D16014;
@@ -160,6 +191,9 @@ nav .links a {
 }
 nav img {
   border: solid #313715 2px;
+}
+nav .show {
+  display: block;
 }
 .main {
   display: flex;
@@ -184,7 +218,8 @@ nav img {
 }
 @media (max-width: 500px) {
   .main .login {
-    width: 100%;
+    width: 95%;
+    margin: auto;
   }
 }
 .main .login h2 {
@@ -209,7 +244,8 @@ nav img {
 }
 @media (max-width: 500px) {
   .main .content {
-    width: 100%;
+    width: 95%;
+    margin: auto;
   }
 }
 .main .content .stats {
@@ -220,9 +256,10 @@ nav img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'Montserrat', sans-serif;
 }
 .main .content .stats .stat .mainStat {
-  font-size: 2.4rem;
+  font-size: 3.4rem;
 }
 .images {
   padding-top: 30px;
@@ -244,5 +281,6 @@ nav img {
   .images img {
     width: 100%;
     height: initial;
+    padding-top: 5px;
   }
 }
