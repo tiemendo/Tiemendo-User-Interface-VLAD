@@ -193,7 +193,7 @@ nav img {
   border: solid #313715 2px;
 }
 nav .show {
-  display: block;
+  display: flex !important;
 }
 .main {
   display: flex;
