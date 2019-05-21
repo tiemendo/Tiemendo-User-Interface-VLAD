@@ -167,6 +167,11 @@ nav img {
   height: 400px;
   padding-top: 50px;
 }
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+}
 .main .login {
   color: #F9F9F9;
   width: 46%;
@@ -176,6 +181,11 @@ nav img {
   padding: 0px 20px;
   background-color: #939F5C;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .main .login {
+    width: 100%;
+  }
 }
 .main .login h2 {
   font-family: 'Montserrat', sans-serif;
@@ -197,6 +207,11 @@ nav img {
   background-color: #313715;
   border-radius: 15px;
 }
+@media (max-width: 500px) {
+  .main .content {
+    width: 100%;
+  }
+}
 .main .content .stats {
   display: flex;
   justify-content: space-around;
@@ -214,9 +229,20 @@ nav img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .images {
+    flex-direction: column;
+  }
+}
 .images img {
   height: 300px;
   width: 33%;
   object-fit: contain;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .images img {
+    width: 100%;
+    height: initial;
+  }
 }

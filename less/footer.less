@@ -2,10 +2,17 @@
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+        flex-direction: column;
+    }
     img {
         height: 300px;
         width: 33%;
         object-fit: contain;
         border-radius: 10px;
+        @media @mobile {
+            width: 100%;
+            height: initial;
+        }
     }
 }

@@ -3,6 +3,9 @@
     justify-content: space-between;
     height: 400px;
     padding-top: 50px;
+    @media @mobile {
+        flex-direction: column-reverse;
+    }
   
     .login {
         color: @white;
@@ -14,6 +17,9 @@
         padding: 0px 20px;
         background-color: @midGreen;
         border-radius: 15px;
+        @media @mobile {
+            width: 100%;
+        }
         h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 2.4rem;
@@ -36,6 +42,9 @@
         padding: 0px 20px;
         background-color: @darkGreen;
         border-radius: 15px;
+        @media @mobile {
+            width: 100%;
+        }
         .stats {
             display: flex;
             justify-content: space-around;
