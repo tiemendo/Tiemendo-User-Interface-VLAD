@@ -210,19 +210,34 @@ nav .show {
 }
 .body .rolesList {
   width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
 }
 .body .profileImages {
   width: 33%;
-  display: column;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
 }
 .body .profileImages img {
-  justify-items: center;
   width: 100%;
-  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
   object-fit: contain;
+  box-shadow: 10px 10px 10px #313715;
 }
 .body .description {
   width: 33%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+.body .description .profile {
+  text-align: center;
+  width: 100%;
 }
 .main {
   display: flex;
