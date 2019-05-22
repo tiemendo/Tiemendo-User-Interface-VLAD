@@ -7,7 +7,7 @@ class DropDownLink{
         this.button.addEventListener ("click", () => {
             this.toggleContent();
         })
-        this.addEventListener("resize", () => {
+        this.button.addEventListener("resize", () => {
             this.hideContent();
         })
     }
