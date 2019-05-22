@@ -203,6 +203,27 @@ nav img {
 nav .show {
   display: flex !important;
 }
+.body {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.body .rolesList {
+  width: 33%;
+}
+.body .profileImages {
+  width: 33%;
+  display: column;
+}
+.body .profileImages img {
+  justify-items: center;
+  width: 100%;
+  clip-path: circle(50% at 50% 50%);
+  object-fit: contain;
+}
+.body .description {
+  width: 33%;
+}
 .main {
   display: flex;
   justify-content: space-between;
