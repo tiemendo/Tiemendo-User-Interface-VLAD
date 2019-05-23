@@ -1,15 +1,42 @@
+
+
+
 .body {
-    //height: 90vh;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    @media @tablet {
+        flex-direction: column;
+        //justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+        height: 80%;
+    }
     .rolesList{
         width: 33%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         font-size: 2rem;
-
+        @media @tablet {
+            width: 75%;
+            //height: 30vh;
+            height: initial;
+        }
+        div {
+            background-color: transparent;
+            font-size: 2rem;
+            border: 0px;
+            width: 100%;
+            margin: 5px auto 0px auto;
+            text-align: center;
+            font-family: 'Muli', sans-serif;
+            padding: 0px;
+            @media @tablet {
+                font-size: 1.5rem;
+            }
+        }
 
     }
     .profileImages {
@@ -21,8 +48,26 @@
         img {
             width: 100%;
             border-radius: 50%;
-            object-fit: contain;
+            //object-fit: contain;
             box-shadow: 10px 10px 10px @darkGreen;
+            margin-top: 1px;
+            @media @tablet {
+                max-height: 375px;
+                max-width: 375px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .notCircle {
+            border-radius: initial;
+            box-shadow: 0px 0px 0px;
+        }
+        @media @tablet {
+            width: 75%;
+            //height: 30vh;
+            height: initial;
+            margin-top: 30px;
+           
         }
     }
     .description {
@@ -34,6 +79,20 @@
         .profile {
             text-align: center;
             width: 100%;
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 900;
+                color: @darkGreen;
+                text-shadow: 1px 1px 5px @darkGreen;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+        @media @tablet {
+            width: 75%;
+            height: initial;
+            margin-top: 30px;
         }
     }
 }

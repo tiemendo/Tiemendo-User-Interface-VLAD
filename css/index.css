@@ -208,12 +208,42 @@ nav .show {
   justify-content: space-around;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80%;
+  }
+}
 .body .rolesList {
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .body .rolesList {
+    width: 75%;
+    height: initial;
+  }
+}
+.body .rolesList div {
+  background-color: transparent;
+  font-size: 2rem;
+  border: 0px;
+  width: 100%;
+  margin: 5px auto 0px auto;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  padding: 0px;
+}
+@media (max-width: 800px) {
+  .body .rolesList div {
+    font-size: 1.5rem;
+  }
 }
 .body .profileImages {
   width: 33%;
@@ -225,8 +255,27 @@ nav .show {
 .body .profileImages img {
   width: 100%;
   border-radius: 50%;
-  object-fit: contain;
   box-shadow: 10px 10px 10px #313715;
+  margin-top: 1px;
+}
+@media (max-width: 800px) {
+  .body .profileImages img {
+    max-height: 375px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.body .profileImages .notCircle {
+  border-radius: initial;
+  box-shadow: 0px 0px 0px;
+}
+@media (max-width: 800px) {
+  .body .profileImages {
+    width: 75%;
+    height: initial;
+    margin-top: 30px;
+  }
 }
 .body .description {
   width: 33%;
@@ -238,6 +287,22 @@ nav .show {
 .body .description .profile {
   text-align: center;
   width: 100%;
+}
+.body .description .profile h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #313715;
+  text-shadow: 1px 1px 5px #313715;
+}
+.body .description .profile p {
+  font-size: 1.1rem;
+}
+@media (max-width: 800px) {
+  .body .description {
+    width: 75%;
+    height: initial;
+    margin-top: 30px;
+  }
 }
 .main {
   display: flex;
