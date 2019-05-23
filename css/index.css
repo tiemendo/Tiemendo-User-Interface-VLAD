@@ -149,7 +149,7 @@ nav {
   padding-top: 10px;
   font-size: 1.3rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   nav {
     flex-direction: row-reverse;
   }
@@ -166,7 +166,7 @@ nav .navFunctional .dropDownButton .hamburgerLine {
   background-color: black;
   margin: 6px 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   nav .navFunctional .dropDownButton {
     display: initial;
   }
@@ -176,8 +176,10 @@ nav .navFunctional .links {
   width: 100%;
   justify-content: space-around;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   nav .navFunctional .links {
+    z-index: 2;
+    position: absolute;
     flex-direction: column;
     width: initial;
     display: none;
@@ -189,25 +191,140 @@ nav .navFunctional .links a {
   color: #D16014;
   font-family: 'Montserrat', sans-serif;
 }
+@media (max-width: 800px) {
+  nav .navFunctional .links a {
+    background-color: #BBCE8A;
+    padding: 3px;
+  }
+}
 nav img {
   border: solid #313715 2px;
 }
 nav .show {
   display: flex !important;
 }
+.body {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80%;
+  }
+}
+.body .rolesList {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .body .rolesList {
+    width: 75%;
+    height: initial;
+  }
+}
+.body .rolesList div {
+  background-color: transparent;
+  font-size: 2rem;
+  border: 0px;
+  width: 100%;
+  margin: 5px auto 0px auto;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  padding: 0px;
+}
+@media (max-width: 800px) {
+  .body .rolesList div {
+    font-size: 1.5rem;
+  }
+}
+.body .profileImages {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+.body .profileImages img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px #313715;
+  margin-top: 1px;
+}
+@media (max-width: 800px) {
+  .body .profileImages img {
+    max-height: 375px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.body .profileImages .notCircle {
+  border-radius: initial;
+  box-shadow: 0px 0px 0px;
+}
+@media (max-width: 800px) {
+  .body .profileImages {
+    width: 75%;
+    height: initial;
+    margin-top: 30px;
+  }
+}
+.body .description {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+.body .description .profile {
+  text-align: center;
+  width: 100%;
+}
+.body .description .profile h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #313715;
+  text-shadow: 1px 1px 5px #313715;
+}
+.body .description .profile p {
+  font-size: 1.1rem;
+}
+@media (max-width: 800px) {
+  .body .description {
+    width: 75%;
+    height: initial;
+    margin-top: 30px;
+  }
+}
 .main {
   display: flex;
   justify-content: space-between;
   height: 400px;
+  box-sizing: border-box;
   padding-top: 50px;
 }
 @media (max-width: 500px) {
   .main {
     flex-direction: column-reverse;
+    padding-top: 55px;
+  }
+}
+@media (max-width: 800px) {
+  .main {
+    height: initial;
   }
 }
 .main .login {
-  color: #F9F9F9;
+  color: #313715;
+  box-shadow: 10px 10px 20px #313715;
   width: 46%;
   display: flex;
   flex-direction: column;
@@ -215,6 +332,12 @@ nav .show {
   padding: 0px 20px;
   background-color: #939F5C;
   border-radius: 15px;
+}
+@media (max-width: 800px) {
+  .main .login {
+    width: 70%;
+    margin-left: 10px;
+  }
 }
 @media (max-width: 500px) {
   .main .login {
@@ -224,16 +347,49 @@ nav .show {
 }
 .main .login h2 {
   font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 5px black;
   font-size: 2.4rem;
-  color: #D16014;
+  color: #BBCE8A;
   padding-top: 20px;
+  font-weight: 900;
+  text-align: right;
 }
 .main .login p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  width: 95%;
+}
+@media (max-width: 800px) {
+  .main .login p {
+    margin-top: 10px;
+  }
+}
+.main .login ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+.main .login a {
+  color: #313715;
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin: 0 auto 0 auto;
+  font-weight: 800;
+  padding-top: 8px;
+  text-align: center;
+  width: 200px;
+  height: 35px;
+  background: #D16014;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #313715;
+}
+@media (max-width: 800px) {
+  .main .login a {
+    margin: 10px auto;
+  }
 }
 .main .content {
   color: #F9F9F9;
+  box-shadow: 10px 10px 20px #313715;
   width: 46%;
   display: flex;
   flex-direction: column;
@@ -242,15 +398,35 @@ nav .show {
   background-color: #313715;
   border-radius: 15px;
 }
+@media (max-width: 800px) {
+  .main .content {
+    width: 30%;
+  }
+}
 @media (max-width: 500px) {
   .main .content {
     width: 95%;
-    margin: auto;
+    margin: 20px auto 0px auto;
   }
 }
 .main .content .stats {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
+}
+@media (max-width: 800px) {
+  .main .content .stats {
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: stretch;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .main .content .stats {
+    flex-direction: row;
+    padding-top: 20px;
+  }
 }
 .main .content .stats .stat {
   display: flex;
@@ -261,12 +437,40 @@ nav .show {
 .main .content .stats .stat .mainStat {
   font-size: 3.4rem;
 }
+@media (max-width: 800px) {
+  .main .content .stats .stat .mainStat {
+    font-size: 2rem;
+  }
+}
+.main .content .stats .stat .subStat {
+  color: #D16014;
+}
+.main .content p {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  font-family: 'Nunito', sans-serif;
+}
+@media (max-width: 500px) {
+  .main .content p {
+    margin: 10px auto 0px auto;
+  }
+}
+@media (max-width: 500px) {
+  .main .content .hook {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .main .content .hookScript {
+    display: none;
+  }
+}
 .images {
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .images {
     flex-direction: column;
   }
@@ -277,7 +481,7 @@ nav .show {
   object-fit: contain;
   border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .images img {
     width: 100%;
     height: initial;

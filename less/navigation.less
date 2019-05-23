@@ -9,7 +9,7 @@ nav {
     align-items: center;
     padding-top: 10px;
     font-size: 1.3rem;
-    @media @mobile {
+    @media @tablet {
         flex-direction: row-reverse;
     }
     .navFunctional {
@@ -22,7 +22,7 @@ nav {
                 background-color: black;
                 margin: 6px 0;
             }
-            @media @mobile {
+            @media @tablet {
                 display: initial;
             }
         }
@@ -30,20 +30,22 @@ nav {
             display: flex;
             width: 100%;
             justify-content: space-around;
-            @media @mobile {
+            @media @tablet {
+                z-index: 2;
+                position: absolute;
                 flex-direction: column;
                 width: initial;
-                display: none;
+                display: none; //eventHandler reveals links
             }
-            // @media @tablet {
-            //     display: flex !important;
-            // }
-            
             a {
                 text-decoration: none;
                 font-weight: 900;
                 color: @orange;
                 font-family: 'Montserrat', sans-serif;
+                @media @tablet {
+                    background-color: @lightGreen;
+                    padding: 3px;
+                }
 
             }
         }
@@ -52,7 +54,11 @@ nav {
         border: solid @darkGreen 2px;
     }
 
+
     .show {
         display: flex !important;
     }
+
+
+
 }
