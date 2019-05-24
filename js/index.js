@@ -39,7 +39,6 @@ class Member {
     constructor (member) {
         this.member = member;
         this.data = document.querySelector(`.role[data-member = '${this.member.dataset.member}']`);
-        this.data = document.querySelector(`.role[data-member = '${this.member.dataset.member}']`);
         this.image = document.querySelector(`.profileImage[data-member = '${this.member.dataset.member}']`);
         this.profile = document.querySelector(`.profile[data-member = '${this.member.dataset.member}']`);
         this.information = new Information(this.profile, this.image);
@@ -49,10 +48,10 @@ class Member {
         let members = document.querySelectorAll(".role");
         members.forEach(function(member){
             member.style.color = "#313715";
-            member.style.fontSize = "2rem";
+            member.style.fontSize = "1.5rem";
         });
         this.member.style.color = "#D16014";
-        this.member.style.fontSize = "2.5rem";
+        this.member.style.fontSize = "2.2rem";
         this.information.select(); 
     }
 }
