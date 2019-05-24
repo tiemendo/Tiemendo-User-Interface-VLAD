@@ -502,3 +502,8 @@ nav .show {
     padding-top: 5px;
   }
 }
+@media (max-width: 800px) {
+  .images .lastImg {
+    margin-bottom: 10px;
+  }
+}
