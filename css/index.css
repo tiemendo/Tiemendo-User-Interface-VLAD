@@ -240,11 +240,12 @@ nav .show {
   text-align: center;
   font-family: 'Muli', sans-serif;
   padding: 0px;
+  background-image: linear-gradient(#F9F9F9, #939F5C);
+  border-radius: 8px;
 }
 @media (max-width: 800px) {
   .body .rolesList button {
     font-size: 1.5rem;
-    background-image: linear-gradient(#F9F9F9, #BBCE8A);
   }
 }
 .body .rolesList .dummy {
