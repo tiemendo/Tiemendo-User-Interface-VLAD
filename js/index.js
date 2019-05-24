@@ -48,10 +48,10 @@ class Member {
         let members = document.querySelectorAll(".role");
         members.forEach(function(member){
             member.style.color = "#313715";
-            member.style.fontSize = "1.5rem";
+            //member.style.fontSize = "1.5rem";
         });
         this.member.style.color = "#D16014";
-        this.member.style.fontSize = "2.2rem";
+        //this.member.style.fontSize = "1.7rem";
         this.information.select(); 
     }
 }
