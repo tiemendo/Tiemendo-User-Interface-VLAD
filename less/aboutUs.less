@@ -19,24 +19,34 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         @media @tablet {
             width: 75%;
             //height: 30vh;
             height: initial;
         }
-        div {
+        button {
+            
             background-color: transparent;
             font-size: 1.5rem;
-            border: 0px;
-            width: 100%;
+            border: 1px solid @darkGreen;
+            width: 260px;
+            
             margin: 5px auto 0px auto;
             text-align: center;
             font-family: 'Muli', sans-serif;
             padding: 0px;
+            
             @media @tablet {
                 font-size: 1.5rem;
+                background-image: linear-gradient(@white, @lightGreen)
             }
+        }
+        .dummy {
+            border: 0px;
+            color: @darkGreen;
+            background-image: initial;
+            font-weight: 600;
         }
 
     }

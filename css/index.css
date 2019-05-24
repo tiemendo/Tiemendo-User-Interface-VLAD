@@ -223,7 +223,7 @@ nav .show {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 800px) {
   .body .rolesList {
@@ -231,20 +231,27 @@ nav .show {
     height: initial;
   }
 }
-.body .rolesList div {
+.body .rolesList button {
   background-color: transparent;
   font-size: 1.5rem;
-  border: 0px;
-  width: 100%;
+  border: 1px solid #313715;
+  width: 260px;
   margin: 5px auto 0px auto;
   text-align: center;
   font-family: 'Muli', sans-serif;
   padding: 0px;
 }
 @media (max-width: 800px) {
-  .body .rolesList div {
+  .body .rolesList button {
     font-size: 1.5rem;
+    background-image: linear-gradient(#F9F9F9, #BBCE8A);
   }
+}
+.body .rolesList .dummy {
+  border: 0px;
+  color: #313715;
+  background-image: initial;
+  font-weight: 600;
 }
 .body .profileImages {
   width: 33%;
